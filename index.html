@@ -1,852 +1,623 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
-
-<head>
-    <!--==================== METAS ====================-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hitesh Patil | Machine Learning Engineer@CIPIO.ai | Data Science Intern@Von Roll | AI Grad@UB | Back End Engineer@Ajio | Engineering@RAIT | Artificial Intelligence | Generative AI | Natural Language Processing | Machine Learning">
-    <meta name="keywords" content="ML enthusiast, Web Developer, Full Stack Developer, MERN Stack Developer">
-    <meta name="robots" content="index, follow">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="language" content="English">
-    <meta name="revisit-after" content="4 days">
-    <meta name="author" content="Hitesh Patil">
-    <link rel="icon" type="image/png" href="assets/img/UB_logo.png">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-
-    <!--==================== UNICONS ====================-->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-
-    <!--==================== SWIPER CSS ====================-->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-
-    <!--==================== CSS ====================-->
-    <link rel="stylesheet" href="assets/css/styles.css">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Hitesh Patil</title>
+    
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <meta name="author" content="Hitesh Patil">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" content="Hitesh Patil | Machine Learning Engineer@CIPIO.ai | Data Science Intern@Von Roll | AI Grad@UB | Back End Engineer@Ajio | Engineering@RAIT | Artificial Intelligence | Generative AI | Natural Language Processing | Machine Learning">
+    <meta name="keywords" content="Hitesh Patil. NLP Engineer. Machine Learning Engineer. Data Scientist. Data Analyst. AI Grad, UB, Ajio, Artificial Intelligence, GenerativeAI, LLMs, Natural Language Processing, Machine Learning, Advance Data Analytics">
+
+    <!-- <link rel="stylesheet" type="text/css" href="stylesheet.css"> -->
+    <link rel="icon" type="image/png" href="images/UB_logo.png">
+    
 </head>
-
-<body>
-    <!--==================== HEADER ====================-->
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="nav__logo">
-                <img src="assets/img/logo-no-background.png" alt="logo.png" class="nav__logo-img">
-            </a>
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list grid">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link active-link">
-                            <i class="uil uil-estate nav__icon"></i> Home
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#about" class="nav__link">
-                            <i class="uil uil-user nav__icon"></i> About
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#skills" class="nav__link">
-                            <i class="uil uil-file-info-alt nav__icon"></i> Skills
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#portfolio" class="nav__link">
-                            <i class="uil uil-scenery nav__icon"></i> Portfolio
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#contact" class="nav__link">
-                            <i class="uil uil-message nav__icon"></i> Contact
-                        </a>
-                    </li>
-                </ul>
-
-                <i class="uil uil-times nav__close" id="nav-close"></i>
-            </div>
-            <div class="nav__btns">
-                <!-- Theme change button -->
-                <i class="uil uil-moon change-theme" id="theme-button"></i>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="uil uil-apps"></i>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <!--==================== MAIN ====================-->
-    <main class="main">
-        <!--==================== HOME ====================-->
-        <section class="home section" id="home">
-            <div class="home__container container grid">
-                <div class="home__content grid">
-                    <div class="home__social">
-                        <a href="https://www.linkedin.com/in/hitesh-sudam-patil/" target="_blank"
-                            class="home__social-icon">
-                            <i class="uil uil-linkedin-alt"></i>
-                        </a>
-                        <a href="https://leetcode.com/ziraeus/" class="home__social-icon" target="_blank">
-                            <iconify-icon class="uil" icon="cib:leetcode"></iconify-icon>
-                        </a>
-                        <a href="https://github.com/hiteshpatil237" target="_blank" class="home__social-icon">
-                            <i class="uil uil-github-alt"></i>
-                        </a>
-                    </div>
-
-                    <div class="home__img">
-                        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <!-- <mask id="mask0" mask-type="alpha">
-                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-                                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-                                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-                            </mask> -->
-                            <g mask="url(#mask0)">
-                                <!-- <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" /> -->
-                                <image class="home__blob-img" x='12' y='18' href="assets/img/perfil.jpg" />
-                            </g>
-                        </svg>
-                    </div>
-
-                    <div class="home__data">
-                        <h1 class="home__title">Hi, I am Hitesh.</h1>
-                        <h3 class="home__subtitle">Generative AI / Full-Stack / ML Enthusiast</h3>
-                        <p class="home__description">
-                            I'm Hitesh, a recent Master's graduate in Artificial Intelligence from the University at Buffalo, with extensive professional experience in Machine Learning, Deep Learning, and Software Development. Adept at motivating myself and others, I am passionate about harnessing the power of AI to create impactful solutions and contribute to society using my skills.
+<body class="bg_colour">
+    <table border=0 class="bg_colour" style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <tr style="padding:0px">
+            <td style="padding:0px">
+                
+                <!-- Name tab -->
+                <table border=0 class="bg_colour" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+                    
+                    
+                    <tr style="padding:0px">
+                        <td style="padding:2.5%;width:40%;max-width:45%">
+                            <a href="images/profile.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/profile.jpg" class="img-circle"></a>
+                        </td>
+                        <td style="padding:2.5%;width:90%;vertical-align:left">
+                            <p style="text-align:center">
+                                <h1  style="text-align:center"><name>Hitesh Patil</name></h1>
+                            </p>
+                            <p style="text-align:center">
+                            &nbsp|&nbsp
+                            <a href="#aboutme">About Me</a>
+                            &nbsp|&nbsp
+                            <a href="#news">News</a>
+                            &nbsp|&nbsp
+                            <a href="#experience">Experience</a>
+                            &nbsp|&nbsp
+                            <a href="#projects">Projects</a>
+                            &nbsp|&nbsp
+                            <a href="mailto:hiteshsu@buffalo.edu">Contact</a>
+                            &nbsp|&nbsp
+                            </p>
+                            <p style="text-align:center">
+                            Actively looking for full-time positions as an AI Engineer/ Machine Learning Engineer/ Data Scientist/ NLP Engineer/ Data Engineer/ Software Engineer. 
+                            </p>
+                        </td>
+                        
+                        <td style="padding:2.5%;width:10%;max-width:10%">
+                            
+                        </td>
+                    </tr>
+                    <!-- <tr>
+                    <td colspan="2">
+                        <p style="text-align:center">
+                            &nbsp|&nbsp
+                            <a href="#news" onclick=Expand("news")>News</a>
+                            &nbsp|&nbsp
+                            <a href="#experience" onclick=Expand("experience")>Experience</a>
+                            &nbsp|&nbsp
+                            <a href="#publications" onclick=Expand("publications")>Publications</a>
+                            &nbsp|&nbsp
+                            <a href="#projects" onclick=Expand("projects")>Projects</a>
+                            &nbsp|&nbsp
+                            <a href="#contact" onclick=Expand("contact")>Contact</a>
+                            &nbsp|&nbsp
                         </p>
-                        <div class="about__buttons">
-                            <a href="#contact" class="button button--flex">
-                                Contact me<i class="uil uil-message button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                    </td>
+                    </tr> -->
+                </tbody></table>
 
-                <div class="home__scroll">
-                    <a href="#about" class="home__scroll-button button--flex">
-                        <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-                        <span class="home__scroll-name">Scroll down</span>
-                        <i class="uil uil-arrow-down home__scroll-arrow"></i>
-                    </a>
+<!-- About Me -->
+                <!-- About section, quick links -->
+                <button style="border:0px transparent; background-color: transparent;outline:none;"type="button" class="collapsible" data-toggle="collapse" data-target="#content-aboutme" id="aboutme"><heading>About Me</heading></button>
+                <div id="content-aboutme" class="collapse in"></div>
+                <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+                    <tr style="padding:0px">
+                        <td style="padding:2.5%;width:63%;vertical-align:middle">
+
+                            <p><strong>Academic Background:</strong> I graduated with a master's degree in Artificial Intelligence from <a href="https://www.buffalo.edu/" target="_blank">The State University of New York at Buffalo</a>. My academic journey has been enriched with a broad spectrum of subjects, including Natural Language Processing (NLP), Machine Learning, Deep Learning, and Algorithms Design. This comprehensive exposure has equipped me with a solid understanding and practical skills in AI and its applications. My Bachelor's degree in Computer Science from <a href="https://dypatil.edu/schools/ramrao-adik-institute-of-technology" target="_blank">Ramrao Adik Institue of Technology</a>, provided a robust foundation, sparking my passion for cutting-edge technologies and complex problem-solving in the realms of Artificial Intelligence and Machine Learning.</p>
+
+                            <p><strong>Technical Skills:</strong> My skill set is versatile and robust, encompassing proficiency in various programming languages such as Python, Java, C++, PLSQL, and SQL. I also possess expertise in a plethora of frameworks and tools, including PyTorch, TensorFlow, Keras, Langchain, LlamaIndex, VectorDBs(ChromaDB, Faiss, elasticsearch), MLFlow, PySpark, Pandas, Flask, MongoDB, and SpringBoot. Furthermore, I have hands-on experience working with cloud platforms like Oracle, Azure, Google Cloud Platform (GCP), Amazon Web Services (AWS), Atlas, OpenAI.</p>
+
+                            <p><strong>Professional Roles:</strong> My journey in the fields of NLP, generative AI, Large Language Models (LLMs), and machine learning has been shaped by a series of impactful roles:</p>
+                            <ul>
+                                <li><strong>Machine Learning Engineer at CIPIO.ai:</strong> At CIPIO.ai, I enhanced the content retrieval library by developing a system that uses cosine similarity for efficient retrieval, transforming user content into OpenAI CLIP embeddings stored on Qdrant clusters, and improving retrieval with metadata like object, audio, and text embeddings.</li><br/>
+                                <li><strong>Data Science Intern at Von Roll:</strong> At Von Roll, I designed an advanced Retrieval Augmented Generation (RAG) chatbot for knowledge sharing across six teams, integrated LlamaIndex ReAct Agents for automating insights from SAP reports, and optimized report generation, reducing time by 60%, while also applying LSTM and GRUs for a 20% increase in forecast accuracy.</li><br/>
+                                <li><strong>Software Development Engineer at AJIO.com:</strong> At AJIO.com, I developed Java-Spring Boot micro-services with Apache Spark for data extraction, created GST-based tax algorithms for 90% accuracy, deployed scalable micro-services on Kubernetes, and developed automation suites for "JioMeet" with CI/CD pipelines on Azure DevOps.</li><br/>
+                                <li><strong>Web Developer at ThingsGoSocial:</strong> At ThingsGoSocial, I upgraded the existing system to a MERN stack-based web application, contributed to API development, built a single-page application using Redux, Webpack, and Babel, and developed micro-frontends to reduce server load.</li><br/>
+                            </ul>
+
+                            <p><strong>Summary:</strong> Experienced AI professional with a strong passion for leveraging advanced technologies such as NLP, Machine Learning, and Large Language Models (LLMs) to tackle real-world challenges. My solid academic background in Artificial Intelligence is complemented by hands-on experience in diverse roles, including developing content retrieval systems, engineering advanced Retrieval Augmented Generation (RAG) chatbots, and crafting scalable micro-services. With a track record of enhancing system efficiency and accuracy, I am eager to contribute to innovative advancements in AI and software development, driving impactful solutions in the industry.</p>
+                            <p>
+                                I am highly enthusiastic about exploring opportunities in this space. If you have relevant openings or are interested in having a conversation on these topics. Feel free to check out my 
+                                <a href="data/Hitesh_Sudam_Patil_Resume.pdf" target="_blank" >Resume</a>
+                                and drop me an 
+                                <a href="mailto:hiteshsu@buffalo.edu" target="_blank">e-mail.</a>
+                                I'd be happy to connect for a quick call to discuss! 
+                            </p>
+                            <!-- <p>I am a graduate student at 
+                                <a href="https://www.buffalo.edu/" target="_blank">The State University of New York at Buffalo</a> 
+                                pursuing my master's in Computer Science and Engineering with a specialization in Artificial Intelligence. My academic journey has been incredibly enriching, encompassing a diverse range of coursework spanning NLP, Computational Linguistics, Pattern Recognition, Machine Learning, and Algorithms Design. Complementing this strong academic foundation, I've had the opportunity to engage in practical, real-world projects. Notably, my master's project involved the development of an innovative open-domain retrieval-augmented generation chatbot. Additionally, as a Research Assistant in our network lab, 
+                                under the guidance of Professor <a href = 'https://engineering.buffalo.edu/computer-science-engineering/people/faculty-directory.host.html/content/shared/engineering/computer-science-engineering/profiles/faculty/hu-hongxin.html'>Hongxin Hu</a>, I actively contributed to the creation of a cutting-edge Network Intrusion Detection System driven by deep learning. </p>
+                                <p>My skill set is versatile and robust, encompassing proficiency in various programming languages such as Python, C++, PLSQL, and SQL. I also possess expertise in a plethora of frameworks and tools, including PyTorch, TensorFlow, Keras, Langchain, OpenAI, MLFlow, Pandas, Flask, MongoDB, and SpringBoot. Furthermore, I have hands-on experience working with cloud platforms like AWS, Azure, GCP, and Oracle. This practical experience has allowed me to bridge the gap between academic learning and real-world applications, enabling me to stay at the forefront of the latest cutting-edge technologies in the field.</p>
+                                <p>My journey in the realm of advanced NLP, generative AI, Large Language Models (LLMs), and machine learning has been shaped by a series of impactful roles. During my tenure as a Machine Learning Engineer Intern at Apex Analytix, I assumed a pivotal role in the development of a Knowledge-Specific Conversational Agent. This experience refined my skills in crafting high-performance indexing, retrieval, and generative conversational systems powered by Large Language Models (LLMs). Consequently, I successfully deployed intelligent access solutions across multiple products. 
+                                Subsequently, at Oracle, my role as a Senior Application Engineer led me to engineer an in-memory multivariate anomaly prediction service with a strong emphasis on model explainability. Here, I delved deeply into the realms of traditional machine learning, data analysis, and database optimization, particularly in handling financial data usecases. Prior to this, during my tenure at Wipro Limited as a Project Engineer, I effectively implemented chatbot services that not only significantly reduced workloads but also remarkably enhanced the user experience of the employee helpline system </p>
+                                <p>As I embark on my journey in the software and tech industry, I bring with me a wealth of knowledge and hands-on experience in artificial intelligence, honed through coursework and real-world projects. This unique blend of academic rigor and practical application has not only deepened my interest in AI but has also prepared me for the fast-paced and ever-evolving landscape of technology. I'm now poised to join a forward-thinking team, ready to grow and contribute to cutting-edge advancements in the field of AI and software.</p>
+                            <p>
+                                I am highly enthusiastic about exploring opportunities in this space. If you have relevant openings or are interested in having a conversation on these topics. Feel free to check out my 
+                                <a href="data/Resume_Rahul_Yadav.pdf" target="_blank" >Resume</a>
+                                and drop me an 
+                                <a href="mailto:rahulyad@buffalo.edu" target="_blank">e-mail.</a>
+                                I'd be happy to connect for a quick call to discuss! 
+                            </p> -->
+                            <br>
+                            <p style="text-align:center">
+                                &nbsp~&nbsp
+                                <a href="mailto:hiteshsu@buffalo.edu" target="_blank">Email</a> &nbsp|&nbsp
+                                <a href="data/Hitesh_Sudam_Patil_Resume.pdf" target="_blank" >Resume</a> 
+                                <!-- &nbsp|&nbsp
+                                <a href="https://scholar.google.co.in/citations?user=PySXCeAAAAAJ&hl=en" target="_blank" >Google Scholar</a>  -->
+                                &nbsp|&nbsp
+                                <a href="https://github.com/hiteshpatil237" target="_blank" >Github</a> &nbsp|&nbsp
+                                <a href="https://www.linkedin.com/in/hitesh-sudam-patil/" target="_blank">LinkedIn</a> 
+                                <!-- &nbsp|&nbsp
+                                <a href="https://twitter.com/rishabkhincha" target="_blank">Twitter</a> -->
+                                &nbsp~&nbsp
+                            </p>
+                        </td>
+                        <!-- <td style="padding:2.5%;width:30%;max-width:30%">
+                            <a href="images/RishabKhinchaProfilePic.png"><img style="width:100%;max-width:100%" alt="profile photo" src="images/RishabKhinchaProfilePic_round.png" class="hoverZoomLink"></a>
+                        </td> -->
+                    </tr>
+                </tbody></table>
                 </div>
+                <hr class="soft">
+<!-- News -->
+
+                <!-- <br> -->
+                <button style="border:0px transparent; background-color: transparent;outline:none;"type="button" class="collapsible" data-toggle="collapse" data-target="#content-news" id="news"><heading>News</heading></button>
+                <!-- <div class="container"> -->
+                <div id="content-news" class="collapse in">
+                <!-- <div class="scroll">  -->
+
+                <table border=0 class="bg_colour" style="padding:10px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> 
+                    
+                    <tr>
+                        <td>
+                            <p style="color:darkblue; display:inline">Feb '24 &nbsp</p>
+                            
+                        </td>
+                        <td>
+                            Joined <a href="https://cipio.ai/" target="_blank">CIPIO Inc.</a> as a Machine Learning Engineer
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p style="color:darkblue; display:inline">Jan '24 &nbsp</p>
+                            
+                        </td>
+                        <td>
+                            Graduated with my Masters in AI from UB
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p style="color:darkblue; display:inline">Aug '23 &nbsp</p>
+                        </td>
+                        <td>
+                            Started my final semester(Fall 2023) at UB.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p style="color:darkblue; display:inline">May '23 &nbsp</p>
+                            
+                        </td>
+                        <td>
+                            Joined <a href="https://www.vonroll.com/en/" target="_blank">Von Roll USA Inc.</a> as a Data Science Intern
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p style="color:darkblue; display:inline">Jan '23 &nbsp</p>
+                        </td>
+                        <td>
+                            Started my second semester(Spring 2023) at UB.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p style="color:darkblue; display:inline">Aug '22 &nbsp</p>
+                        </td>
+                        <td>
+                            Started my graduate studies at State University of New York at Buffalo(UB) - Fall 2022 Semester. 
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p style="color:darkblue; display:inline">Nov '20 &nbsp</p>
+
+                        </td>
+                        <td>
+                            Joined <a href="https://www.ajio.com/" target="_blank">AJIO</a> as a Software Development Engineer
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p style="color:darkblue; display:inline">Oct '20 &nbsp</p>
+                        </td>
+                        <td>
+                            Completed my Bachelor of Engineering(BE/Btech) in Computer Engineering from RAIT.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p style="color:darkblue; display:inline">Aug '20 &nbsp</p>
+
+                        </td>
+                        <td>
+                            Joined <a href="http://www.thingsgosocial.com/" target="_blank">Things Go Social</a> as a Web Developer Intern
+                        </td>
+                    </tr>
+                </tbody></table>
+                <!-- </div> -->
+                <!-- </div> -->
+                </div>
+                <hr class="soft">
+                
+<!-- Education -->
+
+<button style="border:0px transparent; background-color: transparent;outline:none;"type="button" class="collapsible" data-toggle="collapse" data-target="#content-education" id="education"><heading>Education</heading></button>
+<div id="content-education" class="collapse in">
+
+<table border=0 class="bg_colour" style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+    <tr>
+        <td style="padding:10px;width:25%;vertical-align:middle">
+            <div class="one">
+                <img src='images/UB_logo.png' width="120">
             </div>
-        </section>
+        </td>
+        <td style="padding:10px;width:75%;vertical-align:top">
+            <big><h4>State University of New York at Buffalo</h4></big> 
+            <papertitle style="color:gray"><big>Master of Science</big> </papertitle> <papertitle ><big>  |  Artifical Intelligence</big></papertitle>   
+            <br>
+            
+            Aug '22 - Dec '23
+            <br>
+            Coursework: 
+            <br>
+            <span>&#8226;</span>
+            CSE-574: Intro Machine Learning 
+            <br>
+            <span>&#8226;</span>
+            CSE-555: Intro Pattern Recognition
+            <br>
+            <span>&#8226;</span>
+            CSE-635: Natural Language Processing and Text Mining
+            <br> 
+            <span>&#8226;</span> 
+            CSE-531: Algorithms Analysis and Design
+            <br>
+            <span>&#8226;</span>
+            CSE-546: Reinforcement Learning
+            <br> 
+            <span>&#8226;</span> 
+            EE-559: Big Data Analytics
+            <br> 
+            <span>&#8226;</span> 
+            CSE-540: Machine Learning & Society
+            <br>
+            <span>&#8226;</span> 
+            EAS-595: Fundamentals of AI
+            <br>
+            <span>&#8226;</span>
+            EAS-501: Introduction to Numerical Mathematics for Data Scientists
+            <br>
+            <span>&#8226;</span>
+            CSE-568: Robotics Algorithms
+            <br>
+            <!-- <p>Working under the supervision of <a href="https://www.ideal.ece.utexas.edu/ghosh/index.html" target="_blank">Dr. Joydeep Ghosh</a> at the <a href="https://www.ideal.ece.utexas.edu/" target="_blank"> IDEAL Lab</a>. We are studying the noise robustness of analog optimization methods for NP-Hard problems.</p> -->
+        </td>
+    </tr>
 
-        <!--==================== ABOUT ====================-->
-        <section class="about section" id="about">
-            <h2 class="section__title">About Me</h2>
-            <span class="section__subtitle">My introduction</span>
+    <tr>
+        <td style="padding:10px;width:25%;vertical-align:middle">
+            <div class="one">
+                <img src='images/rait.png' width="120">
+            </div>
+        </td>
+        <td style="padding:10px;width:75%;vertical-align:top">
+            <big><h4>Ramrao Adik Institue of Technology, Navi Mumbai</h4></big> 
+            <papertitle style="color:gray"><big>Bachelor of Engineering</big> </papertitle> <papertitle ><big> | Computer Engineering</big></papertitle>
+            <br>
+            <big><strong "font-weight:bold"> Specialization: Artifical Intelligence </strong></big>
+            <br>
 
-            <div class="about__container container grid">
-                <img src="assets/img/perfil2.png" alt="" class="about__img">
+            July '16 - Oct '20
+            <br>
+            <br>
+            <!-- <p>Working under the supervision of <a href="https://scholar.google.com/citations?user=SRUYLREAAAAJ&hl=en" target="_blank">Dr. Franco Nori</a> and <a href="http://scholar.google.de/citations?user=VRekVA0AAAAJ&hl=de" target="_blank">Dr. Clemens Gneiting</a> at the <a href="https://www.riken.jp/en/research/labs/chief/theor_qtm_phys/" target="_blank"> Theoretical Quantum Physics Lab</a>. We are studying the noise robustness of analog optimization methods for NP-Hard problems.</p> -->
+        </td>
+    </tr>
 
-                <div class="about__data">
-                    <p class="about__description">As a machine learning and data science specialist with a Master's degree in Artificial Intelligence from the University at Buffalo, I am driven by the goal of harnessing data-driven insights and state-of-the-art technologies to tackle complex real-world challenges. My extensive experience spans data analysis, software engineering, and machine learning, enabling me to deliver high-impact solutions across diverse sectors. Proficient in developing and deploying advanced machine learning models, natural language processing systems, and end-to-end automation pipelines, I bring a robust technical skill set that includes deep learning frameworks, cloud computing platforms, and big data technologies. I am keen to connect and collaborate with like-minded professionals to foster innovation and achieve technological excellence.
+    
+</tbody></table>
+</div>
+<hr class="soft">
+
+
+<!-- Experience -->
+
+                <button style="border:0px transparent; background-color: transparent;outline:none;"type="button" class="collapsible" data-toggle="collapse" data-target="#content-experience" id="experience"><heading>Industry Experience</heading></button>
+                <div id="content-experience" class="collapse in">
+
+                <table border=0 class="bg_colour" style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+                    <tr>
+                        <td style="padding:10px;width:25%;vertical-align:middle">
+                            <div class="one">
+                                <img src='images/cipio.png' width="130">
+                            </div>
+                        </td>
+                        <td style="padding:10px;width:75%;vertical-align:top">
+                            <papertitle style="color:gray"><big>Machine Learning Engineer</big> </papertitle> <papertitle><big> | CIPIO Inc. <br> McLean, VA, USA</big></papertitle>
+                            <br>
+                            Feb '24 - Present
+                            <br>
+                            <br>
+                            <p>
+                                <b>NLP Search based Content Retrieval System</b>
+                                <br>
+                                <span>&#8226;</span> 
+                                Contributed to CIPIOs content retrieval library to procure related content stored on AWS S3 bucket, optimizing data access and retrieval processes.
+                                <br>
+                                <span>&#8226;</span>
+                                Designed and implemented a retrieval system leveraging cosine similarity search between user-entered queries and content embeddings to ensure precise and relevant content matching.
+                                <br>
+                                <span>&#8226;</span>
+                                Meticulously scripted the conversion of user content into OpenAI CLIP embeddings, storing these embeddings on Qdrant clusters to facilitate efficient retrieval.
+                                <br>
+                                <span>&#8226;</span>
+                                Enhanced retrieval efficiency by over 80% by incorporating additional metadata, including object embeddings per keyframe using Faster R-CNN, audio embeddings for video content using OpenAI Whisper, and text embeddings for captions with OpenAI CLIP.
+                            </p>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td style="padding:10px;width:25%;vertical-align:middle">
+                            <div class="one">
+                                <img src='images/vonroll.png' width="130">
+                            </div>
+                        </td>
+                        <td style="padding:10px;width:75%;vertical-align:top">
+                            <papertitle style="color:gray"><big>Data Science Intern</big> </papertitle> <papertitle><big> | Von Roll USA Inc. <br> Schenectady, NY, USA</big></papertitle>
+                            <br>
+                            May '23 - Aug '23
+                            <br>
+                            <br>
+                            <p>
+                                <b>Internal In-House Chatbot for Knowledge Sharing</b>
+                                <br>
+                                <span>&#8226;</span> 
+                                Engineered an advanced Retrieval Augmented Generation (RAG) chatbot to facilitate knowledge sharing across six internal teams, improving information accessibility and collaboration.
+                                <br>
+                                <span>&#8226;</span>
+                                Integrated LlamaIndex ReAct Agents to automate the extraction and analysis of insights from SAP-generated tabular reports, enhancing data-driven decision-making.
+                                <br>
+                                <span>&#8226;</span>
+                                Streamlined report generation through the use of Llama Hub Tools for data visualization, reducing the time required by 60% and increasing efficiency in report production.
+                                <br>
+                                <br>
+                                <b>LSTM Model-based Time Series Forecasting of Sales and Consumption</b>
+                                <br>
+                                <span>&#8226;</span>
+                                Devised a demand forecasting system in the supply chain, significantly enhancing the accuracy in predicting market demand and consumption patterns.
+                                <br>
+                                <span>&#8226;</span>
+                                Conducted meticulous data preprocessing, including normalization, sequence generation, and handling of temporal data to ensure high-quality inputs for the forecasting model
+                                <br>
+                                <span>&#8226;</span>
+                                Adopted advanced deep learning techniques to unravel complex demand patterns, resulting in a 40% improvement in forecast accuracy and more reliable demand predictions.
+                            </p>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td style="padding:10px;width:25%;vertical-align:middle">
+                            <div class="one">
+                                <img src='images/ajio.png' width="130">
+                            </div>
+                        </td>
+                        <td style="padding:10px;width:75%;vertical-align:top">
+                            <papertitle style="color:gray"><big>Software Development Engineer</big> </papertitle> <papertitle><big> | AJIO Inc. <br> Mumbai, India</big></papertitle>
+                            <br>
+                            Nov '20 - Jun '22
+                            <br>
+                            <br>
+                            <p>
+                                <b>Secure B2B tax calculation based micro-service system</b>
+                                <br>
+                                <span>&#8226;</span>
+                                Crafted Java-Spring Boot micro-services integrated with Apache Spark Structured Streaming to ensure seamless and efficient data extraction processes.
+                                <br>
+                                <span>&#8226;</span>
+                                Developed precise tax calculation algorithms, transitioning to GST-based pricing to achieve heightened accuracy and compliance of up to 90%.
+                                <br>
+                                <span>&#8226;</span>
+                                Orchestrated fault-tolerant micro-services deployment on Kubernetes, enhancing scalability and optimizing resource efficiency for robust system performance.
+                            </p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="padding:10px;width:25%;vertical-align:middle">
+                            <div class="one">
+                                <img src='images/tgs.jpeg' width="130">
+                            </div>
+                        </td>
+                        <td style="padding:10px;width:75%;vertical-align:top">
+                            <papertitle style="color:gray"><big>Web Developer Intern</big> </papertitle> <papertitle><big> | Things Go Social <br> Delhi, India</big></papertitle>
+                            <br>
+                            Aug '20 - Nov '20
+                            <br>
+                            <p>
+                                <br>
+                                <span>&#8226;</span> 
+                                Updated an existing system from jQuery and plain HTML to a more robust MERN stack-based web application, contributing to API development for various endpoints.
+                                <br>
+                                <span>&#8226;</span>
+                                Built a single-page web application using the MERN stack with Redux, Webpack, and Babel to enhance functionality and user experience.
+                                <br>
+                                <span>&#8226;</span>
+                                Created micro-frontends to reduce server-side load, optimizing the performance and scalability of the front-end components.
+                            </p>
+                        </td>
+                    </tr> 
+
+                    <!-- <tr>
+                        <td style="padding:10px;width:25%;vertical-align:middle">
+                            <div class="one">
+                                <img src='images/iistLogo.jfif' width="120">
+                            </div>
+                        </td>
+                        <td style="padding:10px;width:75%;vertical-align:top">
+                            <papertitle style="color:gray"><big>Summer Intern</big> </papertitle> <papertitle><big> | Indian Institute of Space Science & Technology (IIST)</big></papertitle>
+                            <br>
+                            May '16 - July '16'
+                            <br>
+                            <br>
+                            <p>Worked under the supervision of <a href="https://jmlr.org/papers/volume15/delgado14a/delgado14a.pdf" target="_blank">Dr. Sumitra S.</a> at the High Performance Computing Lab. Studied ML theory & implemented algorithms specifically ensembles such as Random Forest, AdaBoost etc. from scratch. Performed comparative performance analysis and verified findings based on research paper <a href="https://jmlr.org/papers/volume15/delgado14a/delgado14a.pdf" target="_blank">Fernandez-Delgado et al.</a></p>
+                        </td>
+                    </tr>  -->
+
+                    
+                </tbody></table>
+                </div>
+                <hr class="soft">
+
+<!-- Projects -->
+
+        <button style="border:0px transparent; background-color: transparent;outline:none;"type="button" class="collapsible" data-toggle="collapse" data-target="#content-projects" id="projects"><heading>Projects</heading></button>
+        <div id="content-projects" class="collapse in">
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                    <div class="one">
+                        <a href="images/portfolio0.png"><img src='images/portfolio0.png' width="180"></a>
+                    </div>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:top">
+                    <papertitle><big>Document Data Analyzer</papertitle></big>
+                    <br>
+                    <p><em>
+                         PyTorch, Hugging Face, Python, OpenAI, GenerativeAI, Retreival | Nov. 2023 - Dec. 2023  <a href="https://github.com/hiteshpatil237/pdf-chat-bot" target="_blank">[code]</a><a href="https://pdf-data-analyzer.streamlit.app/" target="_blank">[demo]</a></em></p>
+                    <p>
+                        <span>&#8226;</span> 
+                        Spearheaded building RAG (Retrieval Augmented Generation) chatbot powered by vector databases and LLMs
+                        <br>
+                        <span>&#8226;</span>
+                        Leveraged HuggingFace Sentence Transformer “all-MiniLM-L6-V2” for embeddings and FAISS Similarity Search
+                        <br>
+                        <span>&#8226;</span>
+                        Assimilated OpenAI’s API, LangChain framework and FAISS vector store for orchestrating the pipeline for querying model
                     </p>
-
-                    <div class="about__info">
-                        <div>
-                            <span class="about__info-title">02+</span>
-                            <span class="about__info-name">Years <br> experience </span>
-                        </div>
-                        <div>
-                            <span class="about__info-title">15+</span>
-                            <span class="about__info-name">Completed <br> projects </span>
-                        </div>
-                        <div>
-                            <span class="about__info-title">03</span>
-                            <span class="about__info-name">Companies <br> worked </span>
-                        </div>
+                </td>
+            </tr>     
+            
+            <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                    <div class="one">
+                        <a href="images/sql.png"><img src='images/sql.png' width="180"> </a>
                     </div>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:top">
+                    <papertitle><big>LLM-Powered SQL DB agent</papertitle></big>
+                    <br>
+                    <p><em>
+                        LangChain, OpenAI, LLM, Python, SQL, APIs, SQLAlchemy | Feb. 2024 - Apr. 2024   <a href="https://github.com/hiteshpatil237/pdf-chat-bot" target="_blank">[code]</a></em></p>
+                    <p>
+                        <span>&#8226;</span> 
+                        Developed a foundational NL2SQL model using LangChain that translates natural language queries into SQL commands, allowing users to interact with databases without needing SQL knowledge.
+                        <br>
+                        <span>&#8226;</span>
+                        Implemented rephrasing techniques using LangChain’s prompt templates to convert SQL results into clear, natural language responses, improving user understanding of the data.
+                        <br>
+                        <span>&#8226;</span>
+                        Utilized dynamic few-shot example and relevant table selection to tailor model responses based on query context, ensuring accurate and efficient handling of various user queries.
+                        <br>
+                        <span>&#8226;</span>
+                        Integrated memory capabilities to retain conversational context, enabling the model to accurately address follow-up queries and provide a seamless user experience.
+                        <!-- <br>
+                        <span>&#8226;</span>
+                        Integrated retrieval and generative models, improving conversational accuracy by 35% while maintaining resource efficiency. -->
+                    </p>
+                </td>
+            </tr> 
 
-                    <div class="about__buttons">
-                        <a download=""
-                            href="https://drive.google.com/file/d/1EROuUcatZ6g-c9-oo3ne3V4HGbjti7k2/view?usp=sharing"
-                            class="button button--flex">
-                            Download CV<i class="uil uil-download-alt button__icon"></i>
-                        </a>
+            <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                    <div class="one">
+                        <a href="images/portfolio2.png"><img src='images/portfolio2.png' width="180"> </a>
                     </div>
-                </div>
-            </div>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:top">
+                    <papertitle><big>LSTM Stock Predictor</papertitle></big>
+                    <br>
+                    <p><em>
+                        LSTM, pandas, time series forecasting | Jun. 2023 - Jul. 2023   <a href="https://github.com/hiteshpatil237/LSTM_stockPredictor" target="_blank">[code]</a></em></p>
+                    <p>
+                        <span>&#8226;</span> 
+                        Established a time series forecasting model using a windowed approach and LSTM neural network to predict stock prices, transforming pandas DataFrame data into a format suitable for LSTM training.
+                        <br>
+                        <span>&#8226;</span>
+                        Defined the LSTM model architecture with an input layer, an LSTM layer with 64 units, and two dense layers with ReLU activation, compiled using mean squared error loss and the Adam optimizer.
+                        <br>
+                        <span>&#8226;</span>
+                        Conducted model training over 100 epochs, fitting the model on training data and validating on a separate validation set, ensuring robust performance.
+                        <br>
+                        <span>&#8226;</span>
+                        Visualized model predictions against actual observations for training and testing datasets, effectively capturing temporal dependencies in historical closing prices to enhance forecasting accuracy.
+                    </p>
+                </td>
+            </tr> 
 
-        </section>
-
-        <!--==================== SKILLS ====================-->
-        <section class="skills section" id="skills">
-            <h2 class="section__title">Skills</h2>
-            <span class="section__subtitle">Programming & Technical Skills</span>
-
-            <div class="skills__container container grid">
-                <div>
-                    <!--==================== SKILLS 1 ====================-->
-                    <div class="skills__content skills__open">
-                        <div class="skills__header">
-                            <i class="uil skills__icon">
-                                <iconify-icon icon="carbon:machine-learning-model"></iconify-icon>
-                            </i>
-
-                            <div>
-                                <h1 class="skills__titles">Machine Learning</h1>
-                                <span class="skills__subtitle">2+ years</span>
-                            </div>
-
-                            <i class="uil uil-angle-down skills__arrow"></i>
-                        </div>
-
-                        <div class="skills__list grid">
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Python</h3>
-                                    <span class="skills__number">80%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__80p"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Generative AI</h3>
-                                    <span class="skills__number">85%</span>
-                                </div>
-                                <div class="skills__titles">
-                                    <h6 class="skills__name">Retrival Augmented Generation, LLMs, Fine-Tuning, Azure AI</h6>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__70p"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Frameworks and libraries:</h3>
-                                    <span class="skills__number">70%</span>
-                                </div>
-                                <div class="skills__titles">
-                                    <h6 class="skills__name">TensorFlow, Keras, Scikit-learn, PyTorch</h6>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__70p"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Machine learning techniques:</h3>
-                                    <span class="skills__number">90%</span>
-                                </div>
-                                <div class="skills__titles">
-                                    <h6 class="skills__name">supervised and unsupervised learning, deep learning, NLP,
-                                        computer vision</h6>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__90p"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Data analysis and visualization:</h3>
-                                    <span class="skills__number">90%</span>
-                                </div>
-                                <div class="skills__titles">
-                                    <h6 class="skills__name">pandas, numpy, matplotlib, seaborn, Excel</h6>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__90p"></span>
-                                </div>
-                            </div>
-                        </div>
+            <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                    <div class="one">
+                        <img src='images/airflow.png' width="180">
                     </div>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:top">
+                    <papertitle><big>Twitter Data ETL automation system </papertitle></big>
+                    <br>
+                    <p><em>AWS S3, AWS EC2, AWS-managed Apache Airflow, DAG, CSV, Data Validation frameworks | Sep. 2023 - Oct. 2023  </em></p>
+                    <p>
+                        <span>&#8226;</span> 
+                        Established ETL frameworks on the AWS platform utilizing services such as S3 and EC2 to automate the creation of Twitter data CSV files.
+                        <br>
+                        <span>&#8226;</span>
+                        Initiated data pipelines using AWS-managed Apache Airflow by creating DAGs, automating end-to-end ETL jobs for efficient data processing.
+                        <br>
+                        <span>&#8226;</span>
+                        Acquired proficiency in data validation and quality check frameworks to handle real-time data, ensuring 100% data quality for consumption in the form of CSV files deployed on an S3 bucket.
+                    </p>
+                </td>
+            </tr> 
 
-                    <!--==================== SKILLS 2 ====================-->
-                    <div class="skills__content skills__close">
-                        <div class="skills__header">
-                            <i class="uil uil-brackets-curly skills__icon"></i>
-
-                            <div>
-                                <h1 class="skills__titles">Front-End</h1>
-                                <span class="skills__subtitle">3+ years</span>
-                            </div>
-
-                            <i class="uil uil-angle-down skills__arrow"></i>
-                        </div>
-
-                        <div class="skills__list grid">
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">HTML</h3>
-                                    <span class="skills__number">90%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__90p"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">CSS</h3>
-                                    <span class="skills__number">90%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__90p"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">React.js</h3>
-                                    <span class="skills__number">85%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__85p"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">JavaScript</h3>
-                                    <span class="skills__number">80%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__80p"></span>
-                                </div>
-                            </div>
-                        </div>
+            <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                    <div class="one">
+                        <a href="images/ticket.png"><img src='images/ticket.png' width="180"> </a>
                     </div>
-                </div>
-
-                <div>
-                    <!--==================== SKILLS 3 ====================-->
-                    <div class="skills__content skills__close">
-                        <div class="skills__header">
-                            <i class="uil uil-server-network skills__icon"></i>
-
-                            <div>
-                                <h1 class="skills__titles">Back-end</h1>
-                                <span class="skills__subtitle">3+ years</span>
-                            </div>
-
-                            <i class="uil uil-angle-down skills__arrow"></i>
-                        </div>
-
-                        <div class="skills__list grid">
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Node.js & Express.js</h3>
-                                    <span class="skills__number">80%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__80p"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Django / Flask</h3>
-                                    <span class="skills__number">70%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__70p"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Springboot</h3>
-                                    <span class="skills__number">60%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__60p"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">RESTful APIs</h3>
-                                    <span class="skills__number">80%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__80p"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--==================== SKILLS 4 ====================-->
-                    <div class="skills__content skills__close">
-                        <div class="skills__header">
-                            <i class="uil uil-swatchbook skills__icon"></i>
-
-                            <div>
-                                <h1 class="skills__titles">Tools</h1>
-                                <span class="skills__subtitle">More than 5 years.</span>
-                            </div>
-
-                            <i class="uil uil-angle-down skills__arrow"></i>
-                        </div>
-
-                        <div class="skills__list grid">
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Browser Developer Tools</h3>
-                                    <span class="skills__number">90%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__90p"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Git & Github</h3>
-                                    <span class="skills__number">70%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__70p"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--==================== QUALIFICATION ====================-->
-        <section class="qualification section">
-            <h2 class="section__title">Qualification</h2>
-            <span class="section__subtitle">My personal journey</span>
-
-            <div class="qualification__container container">
-                <div class="qualification__tabs">
-                    <div class="qualification__button button--flex" data-target='#education'>
-                        <i class="uil uil-graduation-cap qualification__icon"></i>
-                        Education
-                    </div>
-
-                    <div class="qualification__button button--flex qualification__active" data-target='#work'>
-                        <i class="uil uil-briefcase-alt qualification__icon"></i>
-                        Work
-                    </div>
-                </div>
-
-                <div class="qualification__sections">
-                    <!--==================== QUALIFICATION CONTENT 1 ====================-->
-                    <div class="qualification__content" data-content id="education">
-                        <!--==================== QUALIFICATION 1 ====================-->
-                        <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title">MS in Artificial Intelligence</h3>
-                                <br />
-                                <span class="qualification__subtitle">University at Buffalo</span>
-                                <div class="qualification__subtitle">
-                                    Relevant Coursework: Analysis of Algorithms, Deep Learning, Reinforcement Learning,
-                                    Big Data Analytics.
-                                </div>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    Aug 2022 - Feb 2024
-                                </div>
-
-                                <div class="qualification__calendar">
-                                    <i class="uil">
-                                        <iconify-icon icon="ic:round-star-border"></iconify-icon>
-                                    </i>
-                                    3.6
-                                </div>
-                            </div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-
-                        </div>
-
-                        <!--==================== QUALIFICATION 2 ====================-->
-                        <div class="qualification__data">
-                            <div></div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-
-                            <div>
-                                <h3 class="qualification__title">BS in Computer Science</h3>
-                                <br />
-                                <span class="qualification__subtitle">University of Mumbai</span>
-
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    Jul 2016 - Oct 2020
-                                </div>
-
-                                <div class="qualification__calendar">
-                                    <i class="uil">
-                                        <iconify-icon icon="ic:round-star-border"></iconify-icon>
-                                    </i>
-                                    3.3
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--==================== QUALIFICATION 3 ====================-->
-                        <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title">Higher Seconday Education</h3>
-                                <br />
-
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    Jun 2014 - May 2016
-                                </div>
-                            </div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <!-- <span class="qualification__line"></span> -->
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--==================== QUALIFICATION CONTENT 2 ====================-->
-                    <div class="qualification__content qualification__active" data-content id="work">
-                        <!--==================== QUALIFICATION 0 ====================-->
-                        <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title">Machine Learning Intern</h3>
-                                <br />
-                                <span class="qualification__subtitle">CIPIO Inc.</span>
-                                <span class="qualification__subtitle">• Contributed to the content retrieval library to procure related content stored on AWS S3 bucket.</span>
-                                <span class="qualification__subtitle">• Designed the retrieval system to employ cosine similarity search between user entered query and content embeddings.</span>
-                                <span class="qualification__subtitle">• Meticulously scripted the conversion of user-content to OpenAI CLIP embeddings and storing them on Qdrant clusters.</span>
-                                <span class="qualification__subtitle">• Improved the retrieval efficiency to over 80% by adding detected objects embedding per keyframe using Faster R-CNN, audio
-                                    embedding for video using OpenAI Whisper and text embedding for captions using OpenAI CLIP.</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    Feb 2022 - June 2022
-                                </div>
-                            </div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-                        </div>
-                        <!--==================== QUALIFICATION 0 ====================-->
-                        <div class="qualification__data">
-                            <div></div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-
-                            <div>
-                                <h3 class="qualification__title">Data Science Intern</h3>
-                                <br />
-                                <span class="qualification__subtitle">Von Roll USA Inc.</span>
-                                <span class="qualification__subtitle">• Engineered advanced Retrieval Augmented Generation (RAG) chatbot for sharing knowledge across 6 internal teams.</span>
-                                <span class="qualification__subtitle">• Integrated LlamaIndex ReAct Agents for automating the process of gaining insights from SAP generated tabular reports.</span>
-                                <span class="qualification__subtitle">• Streamlined report generation by using Llama Hub Tools for data visualization, decreasing time consumed by 60%.</span>
-                                <span class="qualification__subtitle">• Devised demand forecasting system in supply chaing, enhancing accuracy in predicting market demand and consumption.</span>
-                                <span class="qualification__subtitle">• Conducted meticulous data preprocessing, encompassing normalization, sequence generation and temporal data.</span>
-                                <span class="qualification__subtitle">• Adopted advanced deep learning to unravel complex demand patterns, leading to a 40% improvement in forecast accuracy.</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    Jun 2023 - Aug 2023
-                                </div>
-                            </div>
-                        </div>
-                        <!--==================== QUALIFICATION 1 ====================-->
-                        <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title">Software Development Engineer at Ajio</h3>
-                                <br />
-                                <span class="qualification__subtitle">Jio Platforms Limited</span>
-                                <span class="qualification__subtitle">• Developed B2B service features, calculating
-                                    real-time prices with tax variations for diverse products across client
-                                    domains.</span>
-                                <span class="qualification__subtitle">• Deployed secure Line-to-Line communication
-                                    system, implementing JMS and Tibco queuing mechanisms for data transmission.</span>
-                                <span class="qualification__subtitle">• Analyzed requirements, coded in a Spring Boot
-                                    system, and conducted unit tests under the guidance of the Development Lead.</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    Feb 2022 - June 2022
-                                </div>
-                            </div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-                        </div>
-
-
-                        <!--==================== QUALIFICATION 2 ====================-->
-                        <div class="qualification__data">
-                            <div></div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-
-                            <div>
-                                <h3 class="qualification__title">Automation Engineer at JioMeet</h3>
-                                <br />
-                                <span class="qualification__subtitle">Jio Platforms Limited</span>
-                                <span class="qualification__subtitle">• Worked on creating test automation sanity suites
-                                    in Java-Selenium system for “JioMeet.”</span>
-                                <span class="qualification__subtitle">• Created CI/CD pipeline on Azure DevOps based
-                                    setup. Also integrated and deployed the sanity suites on this pipeline.</span>
-                                <span class="qualification__subtitle">• Learnt various automation technologies such as
-                                    Selenium, Appium and frameworks such as Gherkin.</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    Nov 2020 - Feb 2022
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--==================== QUALIFICATION 3 ====================-->
-                        <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title">Web Development Intern</h3>
-                                <br />
-                                <span class="qualification__subtitle">Things Go Social</span>
-                                <span class="qualification__subtitle">• Worked on updating the existing system which was
-                                    built on jQuery and plain HTML to a more robust MERN stack-based web-application.
-                                    Contributed to API development for various endpoints.</span>
-                                <span class="qualification__subtitle">• Built single page web-app with MERN stack using
-                                    Redux, Webpack and Babel.</span>
-                                <span class="qualification__subtitle">• Created micro-frontends in order to reduce the
-                                    server-side load, which was used to load various components of the front-end.</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    Aug 2020 - Nov 2020
-                                </div>
-                            </div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--==================== PORTFOLIO ====================-->
-        <section class="portfolio section" id="portfolio">
-            <h2 class="section__title">Portfolio</h2>
-            <span class="section__subtitle">
-                The work I have done is focused on quality, reliability, and prompt services.
-            </span>
-
-            <div class="portfolio__container container swiper-container">
-                <div class="swiper-wrapper">
-                    <!--==================== PORTFOLIO 1 ====================-->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/portfolio0.png" alt="" class="portfolio__img">
-
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Document Data Analyzer using Retrieval Augmented Generation</h3>
-                            <p class="portfolio__description">Spearheaded building RAG chatbot powered by vector databases and LLMs.</p>
-                            <p class="portfolio__description">ssimilated OpenAI API, LangChain framework and FAISS vector store for orchestrating the pipeline for querying model.</p>
-                            <a href="https://pdf-data-analyzer.streamlit.app/" target="_blank"
-                                class="button button--flex button--small portfolio__button">
-                                Demo
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <!--==================== PORTFOLIO 1 ====================-->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/portfolio1.png" alt="" class="portfolio__img">
-
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Prevention of Drug Counterfeiting using Blockchain</h3>
-                            <p class="portfolio__description">Developed a system for trying to prevent tampering of
-                                confidential information of drug packages.</p>
-                            <p class="portfolio__description">Used React.JS for creating flexible user interface.
-                                Integrated Azure CosmosDB for unstructured data of drug packages.</p>
-                            <a href="https://github.com/hiteshpatil237/capsule" target="_blank"
-                                class="button button--flex button--small portfolio__button">
-                                GitHub Link
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!--==================== PORTFOLIO 2 ====================-->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/portfolio2.png" alt="" class="portfolio__img">
-
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Stock Predictions for Microsoft using LSTM</h3>
-                            <p class="portfolio__description">Trained LSTM model (Keras) for predicting stock prices for
-                                Microsoft.</p>
-                            <p class="portfolio__description">Trained the model on Yahoo Finance data.</p>
-                            <a href="https://github.com/hiteshpatil237/LSTM_stockPredictor" target="_blank"
-                                class="button button--flex button--small portfolio__button">
-                                GitHub Link
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!--==================== PORTFOLIO 3 ====================-->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/portfolio3.png" alt="" class="portfolio__img">
-
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Heart Disease Predictor</h3>
-                            <p class="portfolio__description">Simple Linear Regression model trained for practice.</p>
-                            <a href="https://zir-heart-disease-predictor-54b54bfa6496.herokuapp.com/" target="_blank"
-                                class="button button--flex button--small portfolio__button">
-                                Demo
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Add Arrows -->
-                <div class="swiper-button-next">
-                    <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
-                </div>
-                <div class="swiper-button-prev">
-                    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-                </div>
-
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
-            </div>
-        </section>
-
-        <!--==================== CONTACT ME ====================-->
-        <section class="contact section" id="contact">
-            <h2 class="section__title">Contact me</h2>
-            <span class="section__subtitle">Get in touch</span>
-
-            <div class="contact__container container grid">
-                <div>
-                    <div class="contact__information">
-                        <i class="uil uil-phone contact__icon"></i>
-
-                        <div>
-                            <h3 class="contact__title">Call Me</h3>
-                            <span class="contact__subtitle">+1 716-936-4858</span>
-                        </div>
-                    </div>
-
-                    <div class="contact__information">
-                        <i class="uil uil-envelope contact__icon"></i>
-
-                        <div>
-                            <h3 class="contact__title">Email</h3>
-                            <span class="contact__subtitle">hiteshpatil237@gmail.com</span>
-                        </div>
-                    </div>
-
-                    <div class="contact__information">
-                        <i class="uil uil-map-marker contact__icon"></i>
-
-                        <div>
-                            <h3 class="contact__title">Location</h3>
-                            <span class="contact__subtitle">Buffalo, New York</span>
-                        </div>
-                    </div>
-                </div>
-
-                <form action="https://formsubmit.co/hiteshpatil237@gmail.com" class="contact__form grid" method="POST">
-                    <div class="contact__inputs grid">
-                        <div class="contact__content">
-                            <label for="" class="contact__label">Name</label>
-                            <input type="text" name="name" class="contact__input" required>
-                        </div>
-
-                        <div class="contact__content">
-                            <label for="" class="contact__label">Email</label>
-                            <input type="email" name="email" class="contact__input" required>
-                        </div>
-                    </div>
-
-                    <div class="contact__content">
-                        <label for="" class="contact__label">Message</label>
-                        <textarea name="message" id="" cols="0" rows="7" class="contact__input" required></textarea>
-                    </div>
-
-                    <div>
-                        <!-- <a href="#" class="button button--flex">
-                            Send message
-                            <i class="uil uil-message button__icon"></i>
-                        </a> -->
-                        <input type="submit" value="Send Message" class="button button--flex" />
-                    </div>
-
-                </form>
-            </div>
-
-        </section>
-    </main>
-
-    <!--==================== FOOTER ====================-->
-    <footer class="footer">
-        <div class="footer__bg">
-            <div class="footer__container container grid">
-                <div>
-                    <h1 class="footer__title">Hitesh Patil</h1>
-                    <span class="footer__subtitle">Front-End / Web Developer</span>
-                </div>
-
-                <ul class="footer__links">
-                    <li><a href="#portfolio" class="footer__link">Portfolio</a></li>
-                    <li><a href="#contact" class="footer__link">Contact</a></li>
-                </ul>
-
-                <div class="footer__socials">
-                    <a href="https://www.facebook.com/hitesh.patil.237/" class="footer__social" target="_blank"
-                        class="footer__social">
-                        <i class="uil uil-facebook-f"></i>
-                    </a>
-
-                    <a href="https://www.instagram.com/hiteshpatil237/" class="footer__social" target="_blank"
-                        class="footer__social">
-                        <i class="uil uil-instagram"></i>
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/hitesh-sudam-patil/" target="_blank" class="footer__social">
-                        <i class="uil uil-linkedin-alt"></i>
-                    </a>
-
-                </div>
-            </div>
-
-            <p class="footer__copy">Copyright &#169; 2023 Hitesh Patil. All rights reserved.</p>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:top">
+                    <papertitle><big>Ticket Generating System</papertitle></big>
+                    <br>
+                    <p><em>Next.js, Tailwind CSS, MongoDB, Express.js | May. 2023 - Aug. 2023  <a href="https://github.com/hiteshpatil237/ticketing-app" target="_blank">[Code]</a></em></p>
+                    <p>
+                        <span>&#8226;</span> 
+                        Constructed a Next.js system for allocating system tickets to resolve issues based on severity and priority, ensuring efficient issue management.
+                        <br>
+                        <span>&#8226;</span>
+                        Devised an MVC architecture with a ticket schema stored in a NoSQL format in MongoDB using Atlas, providing a scalable and flexible data storage solution.
+                        <br>
+                        <span>&#8226;</span>
+                        Implemented all CRUD operations with APIs written in an Express.js system, leveraging Next.js routing capabilities to manage the ticket lifecycle effectively.
+                    </p>
+                </td>
+            </tr> 
+
+            
+        </tbody></table>
         </div>
-    </footer>
 
-    <!--==================== SCROLL TOP ====================-->
-    <a href="#" class="scrollup" id="scroll-up">
-        <i class="uil uil-arrow-up scrollup__icon"></i>
-    </a>
 
-    <!--==================== SWIPER JS ====================-->
-    <script src="assets/js/swiper-bundle.min.js"></script>
-    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
 
-    <!--==================== MAIN JS ====================-->
-    <script src="assets/js/main.js"></script>
+</tbody></table>
+</div>
+<hr class="soft">
+
+                
+
 </body>
 
 </html>
